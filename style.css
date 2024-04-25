@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+body{
+    font-family: "Platypi", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-bottom: 3px solid rgb(227, 227, 227);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.202);
+    color: rgb(62, 62, 62);
+    scroll-behavior: smooth;
+    font-size: smaller;
+   
+   
+}
+
+
+
+.images-container{
+    width:30rem;
+    text-align: center;
+
+}
+
+@media (min-width:370px) and (max-width:500px){
+    .images-container{
+        width:20rem;
+        text-align: center;
+        margin-left:0 ;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+
+.images-container img{
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 10px 0px 60px rgba(0, 0, 0, 0.274);
+    
+}
+
+.images-container:nth-child(1){
+    margin-top: 6rem;
+}
+
+.loader{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+.loader img{
+    display: flex;
+    align-self: center;
+}
